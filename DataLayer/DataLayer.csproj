@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -31,8 +31,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,15 +52,112 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BANGCONG.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAOHIEM.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BOPHAN.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHUCVU.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONGTY.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DANTOC.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DB.cs" />
     <Compile Include="DLTest.cs" />
+    <Compile Include="HOPDONG.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KHENTHUONG_KYLUAT.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAICA.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAICONG.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHANVIEN.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHANVIEN_PHUCAP.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHONGBAN.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHUCAP.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLNSModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TANGCA.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TONGIAO.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRINH_DO.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UNGLUONG.cs">
+      <DependentUpon>QLNSModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TransferObject\TransferObject.csproj">
       <Project>{6d380eda-ff0a-408e-8927-f451215d490f}</Project>
       <Name>TransferObject</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="QLNSModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLNSModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="QLNSModel.edmx.diagram">
+      <DependentUpon>QLNSModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLNSModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNSModel.edmx</DependentUpon>
+      <LastGenOutput>QLNSModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLNSModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNSModel.edmx</DependentUpon>
+      <LastGenOutput>QLNSModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -61,7 +61,7 @@
             this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.btPhongBan = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -80,6 +80,7 @@
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
+            this.btCongTy = new System.Windows.Forms.ToolStripButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
@@ -95,6 +96,7 @@
             this.toolStripSeparator27 = new System.Windows.Forms.ToolStripSeparator();
             this.tabControlMenu = new System.Windows.Forms.TabControl();
             this.tabControlContent = new System.Windows.Forms.TabControl();
+            this.toolStripSeparator33 = new System.Windows.Forms.ToolStripSeparator();
             toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage3.SuspendLayout();
@@ -132,9 +134,10 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.LightGray;
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
+            this.tabPage4.Location = new System.Drawing.Point(4, 37);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(788, 80);
+            this.tabPage4.Size = new System.Drawing.Size(1186, 131);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Bảng biểu";
             // 
@@ -143,18 +146,20 @@
             this.tabPage3.BackColor = System.Drawing.Color.LightGray;
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.toolStrip2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Location = new System.Drawing.Point(4, 37);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(788, 80);
+            this.tabPage3.Size = new System.Drawing.Size(1186, 131);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Chấm công";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(157, 61);
+            this.label3.Location = new System.Drawing.Point(236, 94);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 16);
+            this.label3.Size = new System.Drawing.Size(181, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Quản lý chấm công";
             // 
@@ -165,6 +170,7 @@
             this.toolStrip2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator13,
             this.toolStripButton9,
@@ -184,7 +190,8 @@
             this.toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(788, 80);
+            this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip2.Size = new System.Drawing.Size(1186, 131);
             this.toolStrip2.Stretch = true;
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "toolStrip2";
@@ -334,19 +341,21 @@
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.toolStrip1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Location = new System.Drawing.Point(4, 37);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(788, 80);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage2.Size = new System.Drawing.Size(1186, 131);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nhân sự";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(529, 61);
+            this.label2.Location = new System.Drawing.Point(794, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(100, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Nghiệp vụ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -354,9 +363,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 61);
+            this.label1.Location = new System.Drawing.Point(9, 94);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 16);
+            this.label1.Size = new System.Drawing.Size(209, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Danh mục dùng chung";
             // 
@@ -366,6 +376,7 @@
             this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator5,
             this.toolStripButton8,
@@ -374,8 +385,10 @@
             this.toolStripSeparator29,
             this.toolStripButton1,
             this.toolStripSeparator1,
-            this.toolStripButton2,
+            this.btCongTy,
             this.toolStripSeparator4,
+            this.btPhongBan,
+            this.toolStripSeparator33,
             this.toolStripButton3,
             toolStripSeparator10,
             this.toolStripSeparator2,
@@ -394,10 +407,11 @@
             this.toolStripButton7,
             this.toolStripSeparator22,
             this.toolStripSeparator26});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip1.Location = new System.Drawing.Point(4, 5);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(782, 74);
+            this.toolStrip1.Size = new System.Drawing.Size(1178, 121);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.TabStop = true;
             this.toolStrip1.Text = "toolStrip1";
@@ -465,18 +479,19 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton2
+            // btPhongBan
             // 
-            this.toolStripButton2.AutoSize = false;
-            this.toolStripButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton2.Image = global::PresentationLayer.Properties.Resources.icons8_department_32__1_;
-            this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(68, 60);
-            this.toolStripButton2.Text = "Phòng ban";
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btPhongBan.AutoSize = false;
+            this.btPhongBan.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btPhongBan.Image = global::PresentationLayer.Properties.Resources.icons8_department_32__1_;
+            this.btPhongBan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btPhongBan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btPhongBan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btPhongBan.Name = "btPhongBan";
+            this.btPhongBan.Size = new System.Drawing.Size(68, 60);
+            this.btPhongBan.Text = "Phòng ban";
+            this.btPhongBan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btPhongBan.Click += new System.EventHandler(this.btPhongBan_Click);
             // 
             // toolStripSeparator4
             // 
@@ -637,24 +652,36 @@
             this.toolStripSeparator26.Name = "toolStripSeparator26";
             this.toolStripSeparator26.Size = new System.Drawing.Size(7, 80);
             // 
+            // btCongTy
+            // 
+            this.btCongTy.Image = global::PresentationLayer.Properties.Resources.png_transparent_computer_icons_home_house_home_angle_building_rectangle_thumbnail;
+            this.btCongTy.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btCongTy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btCongTy.Name = "btCongTy";
+            this.btCongTy.Size = new System.Drawing.Size(79, 118);
+            this.btCongTy.Text = "Công ty";
+            this.btCongTy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightGray;
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.toolStrip3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Location = new System.Drawing.Point(4, 37);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(788, 80);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage1.Size = new System.Drawing.Size(1186, 131);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Hệ thống";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 61);
+            this.label4.Location = new System.Drawing.Point(228, 94);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
+            this.label4.Size = new System.Drawing.Size(91, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Hệ thống";
             // 
@@ -664,6 +691,7 @@
             this.toolStrip3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStrip3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStrip3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip3.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator14,
             this.tStrbtResetPassword,
@@ -676,10 +704,11 @@
             this.toolStripButton18,
             this.toolStripSeparator28,
             this.toolStripSeparator27});
-            this.toolStrip3.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip3.Location = new System.Drawing.Point(4, 5);
             this.toolStrip3.Name = "toolStrip3";
+            this.toolStrip3.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip3.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip3.Size = new System.Drawing.Size(782, 74);
+            this.toolStrip3.Size = new System.Drawing.Size(1178, 121);
             this.toolStrip3.TabIndex = 1;
             this.toolStrip3.TabStop = true;
             this.toolStrip3.Text = "toolStrip3";
@@ -784,9 +813,10 @@
             this.tabControlMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControlMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabControlMenu.Location = new System.Drawing.Point(0, 0);
+            this.tabControlMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControlMenu.Name = "tabControlMenu";
             this.tabControlMenu.SelectedIndex = 0;
-            this.tabControlMenu.Size = new System.Drawing.Size(796, 112);
+            this.tabControlMenu.Size = new System.Drawing.Size(1194, 172);
             this.tabControlMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControlMenu.TabIndex = 3;
             // 
@@ -794,24 +824,32 @@
             // 
             this.tabControlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlContent.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.tabControlContent.Location = new System.Drawing.Point(0, 112);
+            this.tabControlContent.Location = new System.Drawing.Point(0, 172);
+            this.tabControlContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControlContent.Multiline = true;
             this.tabControlContent.Name = "tabControlContent";
             this.tabControlContent.SelectedIndex = 0;
             this.tabControlContent.ShowToolTips = true;
-            this.tabControlContent.Size = new System.Drawing.Size(796, 338);
+            this.tabControlContent.Size = new System.Drawing.Size(1194, 520);
             this.tabControlContent.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControlContent.TabIndex = 4;
             this.tabControlContent.TabStop = false;
             // 
+            // toolStripSeparator33
+            // 
+            this.toolStripSeparator33.AutoSize = false;
+            this.toolStripSeparator33.Name = "toolStripSeparator33";
+            this.toolStripSeparator33.Size = new System.Drawing.Size(7, 40);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(796, 450);
+            this.ClientSize = new System.Drawing.Size(1194, 692);
             this.Controls.Add(this.tabControlContent);
             this.Controls.Add(this.tabControlMenu);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -845,7 +883,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton btPhongBan;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -898,5 +936,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator31;
         private System.Windows.Forms.ToolStripButton toolStripButton21;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator32;
+        private System.Windows.Forms.ToolStripButton btCongTy;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator33;
     }
 }
