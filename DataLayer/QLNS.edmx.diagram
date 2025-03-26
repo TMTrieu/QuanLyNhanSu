@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9a48b525382d4c66bb9e999b31764acb" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="QLNHANSUModel.BANGCONG" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.BAOHIEM" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.BOPHAN" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.CHUCVU" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.DANTOC" Width="1.5" PointX="3.875" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.HOPDONG" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.KHENTHUONG_KYLUAT" Width="1.5" PointX="5.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.LOAICA" Width="1.5" PointX="6" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.LOAICONG" Width="1.5" PointX="6" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.NHANVIEN" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.NHANVIEN_PHUCAP" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.PHONGBAN" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.PHUCAP" Width="1.5" PointX="6" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.TANGCA" Width="1.5" PointX="8.25" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.TONGIAO" Width="1.5" PointX="1.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.TRINH_DO" Width="1.5" PointX="0.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHANSUModel.UNGLUONG" Width="1.5" PointX="5.25" PointY="28" IsExpanded="true" />
+        <AssociationConnector Association="QLNHANSUModel.FK_BANGCONG_LOAICONG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_BANGCONG_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_BAOHIEM_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_NHANVIEN_BOPHAN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_NHANVIEN_CHUCVU" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_HOPDONG_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_KHENTHUONG_KYLUAT_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_TANGCA_LOAICA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_NHANVIEN_PHONGBAN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_NHANVIEN_PHUCAP_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_NHANVIEN_TRINH_DO" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_TANGCA_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_UNGLUONG_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHANSUModel.FK_NHANVIEN_PHUCAP_PHUCAP" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using BusinessLayer;
+using PresentationLayer.QuanLyNhanSu;
+
+
+
 
 namespace PresentationLayer
 {
@@ -17,6 +21,7 @@ namespace PresentationLayer
         public MainForm()
         {
             InitializeComponent();
+          
         }
 
         //void openForm(Type typeForm)
@@ -73,12 +78,17 @@ namespace PresentationLayer
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnDanToc_Click(object sender, EventArgs e)
         {
+            CreateTab("Dân tộc", new frmDanToc());
+        }
 
+        private void btnTonGiao_Click(object sender, EventArgs e)
+        {
+            CreateTab("Tôn giáo", new frmTonGiao());
         }
 
         private void btPhongBan_Click(object sender, EventArgs e)
@@ -88,4 +98,17 @@ namespace PresentationLayer
             //frm.Show();
         }
     }
-}
+
+        //private void btnDanToc_Click(object sender, EventArgs e)
+        //{
+        //    frmDanToc frm = new frmDanToc();
+        //    frm.Show();
+        //}
+
+        //private void btnTonGiao_Click(object sender, EventArgs e)
+        //{
+        //    frmTonGiao frm= new frmTonGiao();
+        //    frm.Show();
+        //}
+    }
+

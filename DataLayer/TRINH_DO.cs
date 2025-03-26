@@ -17,13 +17,17 @@ namespace DataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TRINH_DO()
         {
-            this.NHANVIEN = new HashSet<NHANVIEN>();
+
+            this.NHANVIENs = new HashSet<NHANVIEN>();
+
         }
     
         public int IDTD { get; set; }
         public string TENTD { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NHANVIEN> NHANVIEN { get; set; }
+
+        public virtual ICollection<NHANVIEN> NHANVIENs { get; set; }
+
     }
 }
