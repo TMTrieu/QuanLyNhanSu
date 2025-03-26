@@ -17,12 +17,14 @@ namespace DataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NHANVIEN()
         {
+
             this.BANGCONGs = new HashSet<BANGCONG>();
             this.BAOHIEMs = new HashSet<BAOHIEM>();
             this.HOPDONGs = new HashSet<HOPDONG>();
             this.KHENTHUONG_KYLUAT = new HashSet<KHENTHUONG_KYLUAT>();
             this.TANGCAs = new HashSet<TANGCA>();
             this.UNGLUONGs = new HashSet<UNGLUONG>();
+
         }
     
         public int MANV { get; set; }
@@ -37,6 +39,7 @@ namespace DataLayer
         public Nullable<int> IDBP { get; set; }
         public Nullable<int> IDCV { get; set; }
         public Nullable<int> IDTD { get; set; }
+
         public Nullable<int> IDDT { get; set; }
         public Nullable<int> IDTG { get; set; }
     
@@ -48,14 +51,17 @@ namespace DataLayer
         public virtual CHUCVU CHUCVU { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<KHENTHUONG_KYLUAT> KHENTHUONG_KYLUAT { get; set; }
         public virtual PHONGBAN PHONGBAN { get; set; }
         public virtual NHANVIEN_PHUCAP NHANVIEN_PHUCAP { get; set; }
         public virtual TRINH_DO TRINH_DO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
         public virtual ICollection<TANGCA> TANGCAs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UNGLUONG> UNGLUONGs { get; set; }
+
     }
 }

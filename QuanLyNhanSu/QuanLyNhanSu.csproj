@@ -21,7 +21,7 @@
     <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>5</WarningLevel>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -93,6 +93,10 @@
     <ProjectReference Include="..\PresentationLayer\PresentationLayer.csproj">
       <Project>{ede4e9c6-a47b-49ef-940d-a813d3d0f864}</Project>
       <Name>PresentationLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferObject\TransferObject.csproj">
+      <Project>{6d380eda-ff0a-408e-8927-f451215d490f}</Project>
+      <Name>TransferObject</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace PresentationLayer
+namespace PresentationLayer
 {
     partial class MainForm
     {
@@ -61,8 +61,10 @@
             this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.btnTrinhDo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnPhongBan = new System.Windows.Forms.ToolStripButton();
+            this.btCongTy = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btPhongBan = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator33 = new System.Windows.Forms.ToolStripSeparator();
             this.btnNhanVien = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnChucVu = new System.Windows.Forms.ToolStripButton();
@@ -81,6 +83,7 @@
             this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.toolStrip4 = new System.Windows.Forms.ToolStrip();
             this.label4 = new System.Windows.Forms.Label();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
@@ -97,7 +100,6 @@
             this.tabControlContent = new System.Windows.Forms.TabControl();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDocument2 = new System.Drawing.Printing.PrintDocument();
-            this.toolStrip4 = new System.Windows.Forms.ToolStrip();
             toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage3.SuspendLayout();
@@ -384,8 +386,10 @@
             this.toolStripSeparator29,
             this.btnTrinhDo,
             this.toolStripSeparator1,
-            this.btnPhongBan,
+            this.btCongTy,
             this.toolStripSeparator4,
+            this.btPhongBan,
+            this.toolStripSeparator33,
             this.btnNhanVien,
             toolStripSeparator10,
             this.toolStripSeparator2,
@@ -406,6 +410,7 @@
             this.toolStripSeparator26});
             this.toolStrip1.Location = new System.Drawing.Point(4, 4);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.toolStrip1.Size = new System.Drawing.Size(1182, 94);
             this.toolStrip1.TabIndex = 0;
@@ -477,24 +482,41 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(7, 40);
             // 
-            // btnPhongBan
+            // btCongTy
             // 
-            this.btnPhongBan.AutoSize = false;
-            this.btnPhongBan.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnPhongBan.Image = global::PresentationLayer.Properties.Resources.icons8_department_32__1_;
-            this.btnPhongBan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPhongBan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnPhongBan.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPhongBan.Name = "btnPhongBan";
-            this.btnPhongBan.Size = new System.Drawing.Size(68, 60);
-            this.btnPhongBan.Text = "Phòng ban";
-            this.btnPhongBan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btCongTy.Image = global::PresentationLayer.Properties.Resources.png_transparent_computer_icons_home_house_home_angle_building_rectangle_thumbnail;
+            this.btCongTy.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btCongTy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btCongTy.Name = "btCongTy";
+            this.btCongTy.Size = new System.Drawing.Size(79, 118);
+            this.btCongTy.Text = "Công ty";
+            this.btCongTy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.AutoSize = false;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(7, 40);
+            // 
+            // btPhongBan
+            // 
+            this.btPhongBan.AutoSize = false;
+            this.btPhongBan.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btPhongBan.Image = global::PresentationLayer.Properties.Resources.icons8_department_32__1_;
+            this.btPhongBan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btPhongBan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btPhongBan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btPhongBan.Name = "btPhongBan";
+            this.btPhongBan.Size = new System.Drawing.Size(68, 60);
+            this.btPhongBan.Text = "Phòng ban";
+            this.btPhongBan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btPhongBan.Click += new System.EventHandler(this.btPhongBan_Click);
+            // 
+            // toolStripSeparator33
+            // 
+            this.toolStripSeparator33.AutoSize = false;
+            this.toolStripSeparator33.Name = "toolStripSeparator33";
+            this.toolStripSeparator33.Size = new System.Drawing.Size(7, 40);
             // 
             // btnNhanVien
             // 
@@ -566,6 +588,7 @@
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(7, 40);
             // 
+           
             // toolStripButton4
             // 
             this.toolStripButton4.AutoSize = false;
@@ -649,63 +672,72 @@
             this.toolStripSeparator26.Name = "toolStripSeparator26";
             this.toolStripSeparator26.Size = new System.Drawing.Size(7, 80);
             // 
-            // tabPage1
+            // btCongTy
+            // 
+            this.btCongTy.Image = global::PresentationLayer.Properties.Resources.png_transparent_computer_icons_home_house_home_angle_building_rectangle_thumbnail;
+            this.btCongTy.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btCongTy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btCongTy.Name = "btCongTy";
+            this.btCongTy.Size = new System.Drawing.Size(79, 118);
+            this.btCongTy.Text = "Công ty";
+            this.btCongTy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightGray;
-            this.tabPage1.Controls.Add(this.toolStrip4);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.toolStrip3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1190, 102);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Hệ thống";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(203, 75);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Hệ thống";
-            // 
-            // toolStrip3
-            // 
-            this.toolStrip3.BackColor = System.Drawing.Color.LightGray;
-            this.toolStrip3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.toolStrip3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStrip3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator14,
-            this.tStrbtResetPassword,
-            this.toolStripSeparator21,
-            this.toolStripButton16,
-            this.toolStripSeparator23,
-            this.toolStripButton17,
-            toolStripSeparator24,
-            this.toolStripSeparator25,
-            this.toolStripButton18,
-            this.toolStripSeparator28,
-            this.toolStripSeparator27});
-            this.toolStrip3.Location = new System.Drawing.Point(4, 4);
-            this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip3.Size = new System.Drawing.Size(1182, 94);
-            this.toolStrip3.TabIndex = 1;
-            this.toolStrip3.TabStop = true;
-            this.toolStrip3.Text = "toolStrip3";
-            // 
-            // toolStripSeparator14
-            // 
-            this.toolStripSeparator14.AutoSize = false;
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(20, 40);
-            // 
+this.tabPage1.Controls.Add(this.toolStrip4);
+this.tabPage1.Controls.Add(this.label4);
+this.tabPage1.Controls.Add(this.toolStrip3);
+this.tabPage1.Location = new System.Drawing.Point(4, 37);
+this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+this.tabPage1.Name = "tabPage1";
+this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+this.tabPage1.Size = new System.Drawing.Size(1186, 131);
+this.tabPage1.TabIndex = 0;
+this.tabPage1.Text = "Hệ thống";
+// 
+// label4
+// 
+this.label4.AutoSize = true;
+this.label4.Location = new System.Drawing.Point(228, 94);
+this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+this.label4.Name = "label4";
+this.label4.Size = new System.Drawing.Size(91, 25);
+this.label4.TabIndex = 6;
+this.label4.Text = "Hệ thống";
+// 
+// toolStrip3
+// 
+this.toolStrip3.BackColor = System.Drawing.Color.LightGray;
+this.toolStrip3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+this.toolStrip3.Dock = System.Windows.Forms.DockStyle.Fill;
+this.toolStrip3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+this.toolStrip3.ImageScalingSize = new System.Drawing.Size(24, 24);
+this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.toolStripSeparator14,
+this.tStrbtResetPassword,
+this.toolStripSeparator21,
+this.toolStripButton16,
+this.toolStripSeparator23,
+this.toolStripButton17,
+toolStripSeparator24,
+this.toolStripSeparator25,
+this.toolStripButton18,
+this.toolStripSeparator28,
+this.toolStripSeparator27});
+this.toolStrip3.Location = new System.Drawing.Point(4, 5);
+this.toolStrip3.Name = "toolStrip3";
+this.toolStrip3.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+this.toolStrip3.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+this.toolStrip3.Size = new System.Drawing.Size(1178, 121);
+this.toolStrip3.TabIndex = 1;
+this.toolStrip3.TabStop = true;
+this.toolStrip3.Text = "toolStrip3";
+// 
+// toolStripSeparator14
+// 
+this.toolStripSeparator14.AutoSize = false;
+this.toolStripSeparator14.Name = "toolStripSeparator14";
+this.toolStripSeparator14.Size = new System.Drawing.Size(20, 40);
+
             // tStrbtResetPassword
             // 
             this.tStrbtResetPassword.AutoSize = false;
@@ -800,10 +832,12 @@
             this.tabControlMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControlMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabControlMenu.Location = new System.Drawing.Point(0, 0);
-            this.tabControlMenu.Margin = new System.Windows.Forms.Padding(4);
+
+            this.tabControlMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControlMenu.Name = "tabControlMenu";
             this.tabControlMenu.SelectedIndex = 0;
-            this.tabControlMenu.Size = new System.Drawing.Size(1198, 138);
+            this.tabControlMenu.Size = new System.Drawing.Size(1194, 172);
+
             this.tabControlMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControlMenu.TabIndex = 3;
             // 
@@ -811,35 +845,38 @@
             // 
             this.tabControlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlContent.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.tabControlContent.Location = new System.Drawing.Point(0, 138);
-            this.tabControlContent.Margin = new System.Windows.Forms.Padding(4);
+
+            this.tabControlContent.Location = new System.Drawing.Point(0, 172);
+            this.tabControlContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+
             this.tabControlContent.Multiline = true;
             this.tabControlContent.Name = "tabControlContent";
             this.tabControlContent.SelectedIndex = 0;
             this.tabControlContent.ShowToolTips = true;
-            this.tabControlContent.Size = new System.Drawing.Size(1198, 465);
+
+            this.tabControlContent.Size = new System.Drawing.Size(1194, 520);
+
             this.tabControlContent.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControlContent.TabIndex = 4;
             this.tabControlContent.TabStop = false;
             // 
-            // toolStrip4
+
+            // toolStripSeparator33
             // 
-            this.toolStrip4.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip4.Location = new System.Drawing.Point(4, 4);
-            this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(1182, 25);
-            this.toolStrip4.TabIndex = 7;
-            this.toolStrip4.Text = "toolStrip4";
+            this.toolStripSeparator33.AutoSize = false;
+            this.toolStripSeparator33.Name = "toolStripSeparator33";
+            this.toolStripSeparator33.Size = new System.Drawing.Size(7, 40);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1198, 603);
+            this.ClientSize = new System.Drawing.Size(1194, 692);
             this.Controls.Add(this.tabControlContent);
             this.Controls.Add(this.tabControlMenu);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -874,7 +911,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton btnTrinhDo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnPhongBan;
+
+
+        private System.Windows.Forms.ToolStripButton btPhongBan;
+
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton btnNhanVien;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -927,8 +967,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator31;
         private System.Windows.Forms.ToolStripButton btnBoPhan;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator32;
-        private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Drawing.Printing.PrintDocument printDocument2;
-        private System.Windows.Forms.ToolStrip toolStrip4;
+
+        private System.Windows.Forms.ToolStripButton btCongTy;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator33;
+
     }
 }

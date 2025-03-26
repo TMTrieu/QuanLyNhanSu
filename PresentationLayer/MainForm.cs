@@ -24,6 +24,21 @@ namespace PresentationLayer
           
         }
 
+        //void openForm(Type typeForm)
+        //{
+        //    foreach(var frm in MdiChildren)
+        //    {
+        //        if (frm.GetType() == typeForm)
+        //        {
+        //            frm.Activate();
+        //            return;
+        //        }
+        //    }
+        //    Form f = (Form)Activate.CreateAccessibilityInstance(typeForm);
+        //    f.MdiParent = this;
+        //    f.Show();
+        //}
+
         private void CreateTab(string tStrbtName, Form frm) // hàm thêm form vào tabcontrol
         {
             foreach (TabPage tab in tabControlContent.TabPages)     // kiểm tra tab bật lên có sẵn chưa
@@ -74,6 +89,13 @@ namespace PresentationLayer
         private void btnTonGiao_Click(object sender, EventArgs e)
         {
             CreateTab("Tôn giáo", new frmTonGiao());
+        }
+
+        private void btPhongBan_Click(object sender, EventArgs e)
+        {
+            CreateTab("Phòng Ban", new DepartmentForm());
+            //DepartmentForm frm = new DepartmentForm();
+            //frm.Show();
         }
     }
 
