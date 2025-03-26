@@ -20,7 +20,8 @@ namespace DataLayer
         SqlConnection cn = new SqlConnection(cnStr);
         SqlCommand cmd = new SqlCommand(sql, cn);
         cmd.CommandType = CommandType.Text;
-        cn.Open();
+     
+            cn.Open();
         var result = (int)cmd.ExecuteScalar();
         cn.Close();
         return (result > 0);*/

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -62,17 +62,39 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="frmDanToc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanToc.Designer.cs">
+      <DependentUpon>frmDanToc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTonGiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTonGiao.Designer.cs">
+      <DependentUpon>frmTonGiao.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TestFrm.Designer.cs">
       <DependentUpon>TestFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTrinhDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrinhDo.Designer.cs">
+      <DependentUpon>frmTrinhDo.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{efdecc04-4859-408c-a1b2-9763125e6f6f}</Project>
       <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{60aefd9f-9265-495c-8827-783559ace6ac}</Project>
+      <Name>DataLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\TransferObject\TransferObject.csproj">
       <Project>{6d380eda-ff0a-408e-8927-f451215d490f}</Project>
@@ -87,14 +109,39 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDanToc.resx">
+      <DependentUpon>frmDanToc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTonGiao.resx">
+      <DependentUpon>frmTonGiao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestFrm.resx">
       <DependentUpon>TestFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrinhDo.resx">
+      <DependentUpon>frmTrinhDo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-degree-32.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sửa.jpg" />
+    <None Include="Resources\đóng 12.jpg" />
+    <None Include="Resources\lưu2.png" />
+    <None Include="Resources\luuw1.png" />
+    <None Include="Resources\lưu1.png" />
+    <None Include="Resources\luuw.png" />
+    <None Include="Resources\lueu.jpg" />
+    <None Include="Resources\lưu.png" />
+    <None Include="Resources\lưuu.jpg" />
+    <None Include="Resources\imageres_5315.ico" />
+    <None Include="Resources\imageres_98.ico" />
+    <None Include="Resources\hủy.png" />
+    <None Include="Resources\hủy.jpg" />
+    <None Include="Resources\hủy1.png" />
+    <None Include="Resources\hủy2.png" />
+    <None Include="Resources\icons8-add-button-48.png" />
     <Content Include="Resources\icons8-advance-payment-32.png" />
     <Content Include="Resources\icons8-allowance-32.png" />
     <Content Include="Resources\icons8-backup-32.png" />
@@ -113,11 +160,21 @@
     <Content Include="Resources\icons8-password-34.png" />
     <Content Include="Resources\icons8-payroll-32.png" />
     <Content Include="Resources\icons8-performance-32.png" />
+    <None Include="Resources\icons8-print-50.png" />
+    <None Include="Resources\icons8-printer-50.png" />
+    <None Include="Resources\icons8-printer-501.png" />
     <Content Include="Resources\icons8-quit-32.png" />
     <Content Include="Resources\icons8-schedule-32.png" />
     <Content Include="Resources\icons8-shift-32.png" />
     <Content Include="Resources\icons8-timesheet-32.png" />
     <Content Include="Resources\icons8-transfer-32.png" />
+    <None Include="Resources\đóng 11.jpg" />
+    <None Include="Resources\đóng1.jpg" />
+    <None Include="Resources\đóng 1.jpg" />
+    <None Include="Resources\đóng.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QuanLyNhanSu\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
