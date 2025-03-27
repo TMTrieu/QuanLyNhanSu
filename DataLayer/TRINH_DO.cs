@@ -29,5 +29,7 @@ namespace DataLayer
 
         public virtual ICollection<NHANVIEN> NHANVIENs { get; set; }
 
+
+
     }
 }

@@ -40,6 +40,7 @@ namespace DataLayer
         public Nullable<int> IDCV { get; set; }
         public Nullable<int> IDTD { get; set; }
 
+
         public Nullable<int> IDDT { get; set; }
         public Nullable<int> IDTG { get; set; }
     
@@ -49,16 +50,23 @@ namespace DataLayer
         public virtual ICollection<BAOHIEM> BAOHIEMs { get; set; }
         public virtual BOPHAN BOPHAN { get; set; }
         public virtual CHUCVU CHUCVU { get; set; }
+
+        public virtual DANTOC DANTOC { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
+
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<KHENTHUONG_KYLUAT> KHENTHUONG_KYLUAT { get; set; }
         public virtual PHONGBAN PHONGBAN { get; set; }
         public virtual NHANVIEN_PHUCAP NHANVIEN_PHUCAP { get; set; }
+
+        public virtual TONGIAO TONGIAO { get; set; }
         public virtual TRINH_DO TRINH_DO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-
         public virtual ICollection<TANGCA> TANGCAs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UNGLUONG> UNGLUONGs { get; set; }

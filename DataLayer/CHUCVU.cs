@@ -17,13 +17,17 @@ namespace DataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CHUCVU()
         {
-            this.NHANVIENs = new HashSet<NHANVIEN>(); // Giữ một tên duy nhất
+
+            this.NHANVIENs = new HashSet<NHANVIEN>();
+
         }
     
         public int IDCV { get; set; }
         public string TENCV { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NHANVIEN> NHANVIENs { get; set; } // Giữ một kiểu đặt tên nhất quán
+
+        public virtual ICollection<NHANVIEN> NHANVIENs { get; set; }
+
     }
 }

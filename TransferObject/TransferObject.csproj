@@ -49,7 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+
+    <Compile Include="DTO_LoaiCa.cs" />
+
     <Compile Include="PhongBanDTO.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
