@@ -17,7 +17,9 @@ namespace DataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LOAICA()
         {
+
             this.TANGCAs = new HashSet<TANGCA>();
+
         }
     
         public int IDLOAICA { get; set; }
@@ -25,6 +27,7 @@ namespace DataLayer
         public Nullable<double> HESO { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
         public virtual ICollection<TANGCA> TANGCAs { get; set; }
     }
 }

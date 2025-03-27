@@ -38,9 +38,13 @@ namespace PresentationLayer
             dataGridView1.DataSource = tb_main;
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+
+
     }
 }

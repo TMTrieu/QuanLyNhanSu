@@ -7,9 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 using BusinessLayer;
-using PresentationLayer;
+
+
+using PresentationLayer.QuanLyNhanSu;
+
+
 
 namespace PresentationLayer
 {
@@ -18,9 +22,11 @@ namespace PresentationLayer
         public MainForm()
         {
             InitializeComponent();
+          
         }
 
         private void OpenTab(string tStrbtName, Form frm) // hàm thêm form vào tabcontrol
+
         {
             foreach (TabPage tab in tabControlContent.TabPages)     // kiểm tra tab bật lên có sẵn chưa
             {
@@ -60,12 +66,24 @@ namespace PresentationLayer
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnDanToc_Click(object sender, EventArgs e)
         {
+            CreateTab("Dân tộc", new frmDanToc());
+        }
 
+        private void btnTonGiao_Click(object sender, EventArgs e)
+        {
+            CreateTab("Tôn giáo", new frmTonGiao());
+        }
+
+        private void btPhongBan_Click(object sender, EventArgs e)
+        {
+            CreateTab("Phòng Ban", new DepartmentForm());
+            //DepartmentForm frm = new DepartmentForm();
+            //frm.Show();
         }
 
         private void tStrbtShiftType_Click(object sender, EventArgs e)
@@ -73,4 +91,17 @@ namespace PresentationLayer
             OpenTab("Loại ca", new FormLoaiCa());
         }
     }
-}
+
+        //private void btnDanToc_Click(object sender, EventArgs e)
+        //{
+        //    frmDanToc frm = new frmDanToc();
+        //    frm.Show();
+        //}
+
+        //private void btnTonGiao_Click(object sender, EventArgs e)
+        //{
+        //    frmTonGiao frm= new frmTonGiao();
+        //    frm.Show();
+        //}
+    }
+
