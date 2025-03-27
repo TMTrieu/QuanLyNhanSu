@@ -26,6 +26,7 @@ namespace PresentationLayer
         private void TestFrm_Load(object sender, EventArgs e)
         {
             loadthu();
+            button2.Location = new Point(this.ClientSize.Width - button2.Width - 10, 10);
         }
 
         BLTest bl = new BLTest();
@@ -35,6 +36,11 @@ namespace PresentationLayer
         {
             tb_main = bl.BLtb();
             dataGridView1.DataSource = tb_main;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

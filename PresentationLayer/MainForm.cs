@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using BusinessLayer;
+using PresentationLayer;
 
 namespace PresentationLayer
 {
@@ -19,7 +20,7 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
-        private void CreateTab(string tStrbtName, Form frm) // hàm thêm form vào tabcontrol
+        private void OpenTab(string tStrbtName, Form frm) // hàm thêm form vào tabcontrol
         {
             foreach (TabPage tab in tabControlContent.TabPages)     // kiểm tra tab bật lên có sẵn chưa
             {
@@ -31,11 +32,12 @@ namespace PresentationLayer
             }
             TabPage newTab = new TabPage(tStrbtName); // lay ten cua tStrbt de tao tab moi
             frm.TopLevel = false;   //   nhúng Form vào TabPage
-            frm.FormBorderStyle = FormBorderStyle.Sizable;
+            frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill; // Form sẽ giãn theo TabPage
             frm.ShowIcon= false;
             frm.MinimizeBox = false;
             frm.MaximizeBox = false;
+           
             frm.Text = ""; 
 
             // Xử lý sự kiện khi form đóng
@@ -53,7 +55,7 @@ namespace PresentationLayer
 
         private void tStrbtResetPassword_Click(object sender, EventArgs e)
         {
-            CreateTab("Doi mat khau", new TestFrm());
+            OpenTab("Đổi mật khẩu", new TestFrm());
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -64,6 +66,11 @@ namespace PresentationLayer
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tStrbtShiftType_Click(object sender, EventArgs e)
+        {
+            OpenTab("Loại ca", new FormLoaiCa());
         }
     }
 }

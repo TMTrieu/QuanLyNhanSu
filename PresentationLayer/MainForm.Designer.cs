@@ -36,19 +36,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
+            this.tStrbtShiftType = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton15 = new System.Windows.Forms.ToolStripButton();
+            this.tStrbtWorkType = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
+            this.tStrbtAllowance = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
+            this.tStrbtOvertime = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
+            this.tStrbtSalaryAdvance = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
+            this.tStrbtAttendance = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
+            this.tStrbtPayroll = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -167,19 +167,19 @@
             this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator13,
-            this.toolStripButton9,
+            this.tStrbtShiftType,
             this.toolStripSeparator12,
-            this.toolStripButton15,
+            this.tStrbtWorkType,
             this.toolStripSeparator20,
-            this.toolStripButton14,
+            this.tStrbtAllowance,
             this.toolStripSeparator19,
-            this.toolStripButton13,
+            this.tStrbtOvertime,
             this.toolStripSeparator18,
-            this.toolStripButton12,
+            this.tStrbtSalaryAdvance,
             this.toolStripSeparator17,
-            this.toolStripButton11,
+            this.tStrbtAttendance,
             this.toolStripSeparator16,
-            this.toolStripButton10,
+            this.tStrbtPayroll,
             this.toolStripSeparator15});
             this.toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
@@ -195,18 +195,19 @@
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton9
+            // tStrbtShiftType
             // 
-            this.toolStripButton9.AutoSize = false;
-            this.toolStripButton9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton9.Image = global::PresentationLayer.Properties.Resources.icons8_shift_32;
-            this.toolStripButton9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton9.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(46, 60);
-            this.toolStripButton9.Text = "Loại ca";
-            this.toolStripButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtShiftType.AutoSize = false;
+            this.tStrbtShiftType.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tStrbtShiftType.Image = global::PresentationLayer.Properties.Resources.icons8_shift_32;
+            this.tStrbtShiftType.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tStrbtShiftType.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tStrbtShiftType.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tStrbtShiftType.Name = "tStrbtShiftType";
+            this.tStrbtShiftType.Size = new System.Drawing.Size(46, 60);
+            this.tStrbtShiftType.Text = "Loại ca";
+            this.tStrbtShiftType.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtShiftType.Click += new System.EventHandler(this.tStrbtShiftType_Click);
             // 
             // toolStripSeparator12
             // 
@@ -214,18 +215,18 @@
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton15
+            // tStrbtWorkType
             // 
-            this.toolStripButton15.AutoSize = false;
-            this.toolStripButton15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton15.Image = global::PresentationLayer.Properties.Resources.icons8_schedule_32;
-            this.toolStripButton15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton15.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton15.Name = "toolStripButton15";
-            this.toolStripButton15.Size = new System.Drawing.Size(61, 60);
-            this.toolStripButton15.Text = "Loại công";
-            this.toolStripButton15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtWorkType.AutoSize = false;
+            this.tStrbtWorkType.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tStrbtWorkType.Image = global::PresentationLayer.Properties.Resources.icons8_schedule_32;
+            this.tStrbtWorkType.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tStrbtWorkType.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tStrbtWorkType.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tStrbtWorkType.Name = "tStrbtWorkType";
+            this.tStrbtWorkType.Size = new System.Drawing.Size(61, 60);
+            this.tStrbtWorkType.Text = "Loại công";
+            this.tStrbtWorkType.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator20
             // 
@@ -233,18 +234,18 @@
             this.toolStripSeparator20.Name = "toolStripSeparator20";
             this.toolStripSeparator20.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton14
+            // tStrbtAllowance
             // 
-            this.toolStripButton14.AutoSize = false;
-            this.toolStripButton14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton14.Image = global::PresentationLayer.Properties.Resources.icons8_advance_payment_32;
-            this.toolStripButton14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton14.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton14.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton14.Name = "toolStripButton14";
-            this.toolStripButton14.Size = new System.Drawing.Size(52, 60);
-            this.toolStripButton14.Text = "Phụ cấp";
-            this.toolStripButton14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtAllowance.AutoSize = false;
+            this.tStrbtAllowance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tStrbtAllowance.Image = global::PresentationLayer.Properties.Resources.icons8_advance_payment_32;
+            this.tStrbtAllowance.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tStrbtAllowance.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tStrbtAllowance.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tStrbtAllowance.Name = "tStrbtAllowance";
+            this.tStrbtAllowance.Size = new System.Drawing.Size(52, 60);
+            this.tStrbtAllowance.Text = "Phụ cấp";
+            this.tStrbtAllowance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator19
             // 
@@ -252,18 +253,18 @@
             this.toolStripSeparator19.Name = "toolStripSeparator19";
             this.toolStripSeparator19.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton13
+            // tStrbtOvertime
             // 
-            this.toolStripButton13.AutoSize = false;
-            this.toolStripButton13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton13.Image = global::PresentationLayer.Properties.Resources.icons8_overtime_32;
-            this.toolStripButton13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton13.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton13.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton13.Name = "toolStripButton13";
-            this.toolStripButton13.Size = new System.Drawing.Size(49, 60);
-            this.toolStripButton13.Text = "Tăng ca";
-            this.toolStripButton13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtOvertime.AutoSize = false;
+            this.tStrbtOvertime.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tStrbtOvertime.Image = global::PresentationLayer.Properties.Resources.icons8_overtime_32;
+            this.tStrbtOvertime.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tStrbtOvertime.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tStrbtOvertime.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tStrbtOvertime.Name = "tStrbtOvertime";
+            this.tStrbtOvertime.Size = new System.Drawing.Size(49, 60);
+            this.tStrbtOvertime.Text = "Tăng ca";
+            this.tStrbtOvertime.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator18
             // 
@@ -271,18 +272,18 @@
             this.toolStripSeparator18.Name = "toolStripSeparator18";
             this.toolStripSeparator18.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton12
+            // tStrbtSalaryAdvance
             // 
-            this.toolStripButton12.AutoSize = false;
-            this.toolStripButton12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton12.Image = global::PresentationLayer.Properties.Resources.icons8_allowance_32;
-            this.toolStripButton12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton12.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton12.Name = "toolStripButton12";
-            this.toolStripButton12.Size = new System.Drawing.Size(67, 60);
-            this.toolStripButton12.Text = "Ứng lương";
-            this.toolStripButton12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtSalaryAdvance.AutoSize = false;
+            this.tStrbtSalaryAdvance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tStrbtSalaryAdvance.Image = global::PresentationLayer.Properties.Resources.icons8_allowance_32;
+            this.tStrbtSalaryAdvance.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tStrbtSalaryAdvance.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tStrbtSalaryAdvance.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tStrbtSalaryAdvance.Name = "tStrbtSalaryAdvance";
+            this.tStrbtSalaryAdvance.Size = new System.Drawing.Size(67, 60);
+            this.tStrbtSalaryAdvance.Text = "Ứng lương";
+            this.tStrbtSalaryAdvance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator17
             // 
@@ -290,18 +291,18 @@
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton11
+            // tStrbtAttendance
             // 
-            this.toolStripButton11.AutoSize = false;
-            this.toolStripButton11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton11.Image = global::PresentationLayer.Properties.Resources.icons8_timesheet_32;
-            this.toolStripButton11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton11.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton11.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton11.Name = "toolStripButton11";
-            this.toolStripButton11.Size = new System.Drawing.Size(67, 60);
-            this.toolStripButton11.Text = "Bảng công";
-            this.toolStripButton11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtAttendance.AutoSize = false;
+            this.tStrbtAttendance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tStrbtAttendance.Image = global::PresentationLayer.Properties.Resources.icons8_timesheet_32;
+            this.tStrbtAttendance.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tStrbtAttendance.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tStrbtAttendance.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tStrbtAttendance.Name = "tStrbtAttendance";
+            this.tStrbtAttendance.Size = new System.Drawing.Size(67, 60);
+            this.tStrbtAttendance.Text = "Bảng công";
+            this.tStrbtAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator16
             // 
@@ -309,18 +310,18 @@
             this.toolStripSeparator16.Name = "toolStripSeparator16";
             this.toolStripSeparator16.Size = new System.Drawing.Size(7, 40);
             // 
-            // toolStripButton10
+            // tStrbtPayroll
             // 
-            this.toolStripButton10.AutoSize = false;
-            this.toolStripButton10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.toolStripButton10.Image = global::PresentationLayer.Properties.Resources.icons8_payroll_32;
-            this.toolStripButton10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.toolStripButton10.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(72, 60);
-            this.toolStripButton10.Text = "Bảng lương";
-            this.toolStripButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tStrbtPayroll.AutoSize = false;
+            this.tStrbtPayroll.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tStrbtPayroll.Image = global::PresentationLayer.Properties.Resources.icons8_payroll_32;
+            this.tStrbtPayroll.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tStrbtPayroll.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tStrbtPayroll.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tStrbtPayroll.Name = "tStrbtPayroll";
+            this.tStrbtPayroll.Size = new System.Drawing.Size(72, 60);
+            this.tStrbtPayroll.Text = "Bảng lương";
+            this.tStrbtPayroll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator15
             // 
@@ -861,19 +862,19 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator22;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
+        private System.Windows.Forms.ToolStripButton tStrbtShiftType;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
-        private System.Windows.Forms.ToolStripButton toolStripButton15;
+        private System.Windows.Forms.ToolStripButton tStrbtWorkType;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
-        private System.Windows.Forms.ToolStripButton toolStripButton14;
+        private System.Windows.Forms.ToolStripButton tStrbtAllowance;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
-        private System.Windows.Forms.ToolStripButton toolStripButton13;
+        private System.Windows.Forms.ToolStripButton tStrbtOvertime;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
-        private System.Windows.Forms.ToolStripButton toolStripButton12;
+        private System.Windows.Forms.ToolStripButton tStrbtSalaryAdvance;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
-        private System.Windows.Forms.ToolStripButton toolStripButton11;
+        private System.Windows.Forms.ToolStripButton tStrbtAttendance;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
-        private System.Windows.Forms.ToolStripButton toolStripButton10;
+        private System.Windows.Forms.ToolStripButton tStrbtPayroll;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStrip toolStrip3;
